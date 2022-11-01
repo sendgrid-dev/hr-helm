@@ -1,0 +1,5 @@
+apiVersion: v2
+name: acme-backend
+description: A Helm chart for acme's backend service
+type: application
+version: 0.1.0

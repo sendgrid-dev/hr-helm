@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: acme-backend
+  namespace: acme-backend
+  labels:
+    app: acme-backend
+spec:
+  ports:
+    - port: 9999
+      targetPort: http
+      name: http
+  selector:
+    app: acme-backend

@@ -1,0 +1,17 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: acme-backend
+  namespace: acme-backend
+spec:
+  rules:
+  - host: api.acme.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: acme-backend
+            port:
+              number: 9999
