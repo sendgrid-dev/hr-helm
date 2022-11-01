@@ -13,7 +13,10 @@ The following table lists the configurable parameters of the Acme-backend chart 
 | ------------------------ | ----------------------- | -------------- |
 | `docker.tag` | What docker tag to run | `"1.0.0"` |
 
-
+To test, run:
+```
+helm template .
+```
 ## Editing and Updating README.md
 To generate the README.md file using [frigate](https://github.com/rapidsai/frigate) , run:
 ```

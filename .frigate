@@ -1,11 +1,10 @@
 {% extends "markdown.jinja2" %}
 
+{% block footnotes -%}
 To test, run:
 ```
 helm template .
 ```
-
-{% block footnotes -%}
 
 {%- endblock %}
 
