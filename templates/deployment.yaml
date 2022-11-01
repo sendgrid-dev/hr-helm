@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: acme-backend
-          image: acme/acme-backend:1.0.2
+          image: acme/acme-backend:{{ .Values.docker.tag }}
           imagePullPolicy: Always 
           command:
             - /bin/bash
