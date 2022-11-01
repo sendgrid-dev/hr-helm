@@ -1,0 +1,19 @@
+{% extends "markdown.jinja2" %}
+
+To test, run:
+```
+helm template .
+```
+
+{% block footnotes -%}
+
+{%- endblock %}
+
+{% block credits -%}
+## Editing and Updating README.md
+To generate the README.md file using [frigate](https://github.com/rapidsai/frigate) , run:
+```
+frigate gen . > README.md
+```
+To edit static elements of the README.md, see: `.frigate`
+{%- endblock %}
